@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>remarkable-playground</title>
+
     <link 
       rel="stylesheet" 
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <style>
-      .jumbotron {
-        background-color: #e6ffe6;
-        text-align: center;
-      }
-    </style>
   </head>
 
   <body>
-    <div id="elm-app-is-loaded-here"></div>
+    <div id="app"></div>
     
-    <script src="elm.js"></script>
+    <script src="dist/elm.js"></script>
     <script>
-      var app = Elm.HomePage.init({
-        node: document.getElementById("elm-app-is-loaded-here")
+      Elm.HomePage.init({
+        node: document.getElementById("app")
       });      
     </script>
   </body>
